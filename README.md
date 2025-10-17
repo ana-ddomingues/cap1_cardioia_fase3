@@ -75,7 +75,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 ---
 
 ## 🔗 Acessos ao Projeto
-- 💻 **Simulação no Wokwi:** [Clique aqui para acessar](https://wokwi.com/projects/https://wokwi.com/projects/444880056645949441)  
+- 💻 **Simulação no Wokwi:** [Clique aqui para acessar](https://wokwi.com/projects/444880056645949441)  
 - 📄 **Relatório com explicações:** Acesse o relatório disponibilizado no arquivo `Relatório – Projeto CardioIA Parte 1.pdf`.
  
 ---
