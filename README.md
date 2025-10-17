@@ -6,63 +6,83 @@
 
 <br>
 
-# Nome do projeto
+# 💓 CardioIA – Monitoramento Contínuo (Fase 3)
 
 ## Nome do grupo
+Grupo 6 
 
 ## 👨‍🎓 Integrantes: 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 1</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 2</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 3</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 4</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 5</a>
+- [Ana Beatriz Duarte Domingues](https://www.linkedin.com/in/)
+  **RM**: 560302
+- [Junior Rodrigues da Silva](https://www.linkedin.com/in/jrsilva051/)
+  **RM**: 559451
+- [Carlos Emilio Castillo Estrada](https://www.linkedin.com/in/)
+  **RM**: 559855
 
 ## 👩‍🏫 Professores:
-### Tutor(a) 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do Tutor</a>
+### Tutor(a)
+- [Lucas Gomes Moreira](https://www.linkedin.com/company/inova-fusca)
 ### Coordenador(a)
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do Coordenador</a>
+- [André Godoi Chiovato](https://www.linkedin.com/company/inova-fusca)
 
+---
 
 ## 📜 Descrição
+Este repositório reúne as **Partes 1 e 2** da Fase 3 do projeto **CardioIA**, que simula um sistema vestível de **monitoramento cardíaco com IoT**.  
+O objetivo é demonstrar o ciclo completo de **coleta, armazenamento, transmissão e visualização de dados de saúde**, utilizando o **ESP32** no ambiente **Wokwi**.
 
-*Descreva seu projeto com base no texto do PBL (até 600 palavras)*
+---
 
-
-## 📁 Estrutura de pastas
+## 📂 Estrutura do Repositório
 
 Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
-- <b>.github</b>: Nesta pasta ficarão os arquivos de configuração específicos do GitHub que ajudam a gerenciar e automatizar processos no repositório.
+- **assets/** → imagens utilizadas na documentação do projeto.  
+- **src/** → código-fonte desenvolvido para esta fase.  
+- `Relatório – Projeto CardioIA Parte 1.pdf` → Relatório da Parte 1.
+- `link_projeto_wokwi` → Link do projeto.  
+- **README.md** → guia geral do projeto (o arquivo que você está lendo).
 
-- <b>assets</b>: aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens.
+--- 
 
-- <b>config</b>: Posicione aqui arquivos de configuração que são usados para definir parâmetros e ajustes do projeto.
+## ⚙️ Funcionalidades
+- **Coleta de dados vitais**:
+  - Temperatura e umidade (sensor DHT22)
+  - Batimentos cardíacos simulados (potenciômetro)
+- **Armazenamento local (SPIFFS)**:
+  - Os dados são gravados em um arquivo (`/dados.txt`) mesmo sem conexão.
+- **Resiliência Offline**:
+  - O sistema continua coletando dados quando offline e sincroniza quando volta a ficar online.
+- **Indicador visual (LED RGB)**:
+  - 🟢 Normal → parâmetros dentro das faixas ideais  
+  - 🟡 Atenção → valores levemente alterados  
+  - 🔴 Crítico → temperatura, umidade ou batimentos fora do limite  
 
-- <b>document</b>: aqui estão todos os documentos do projeto que as atividades poderão pedir. Na subpasta "other", adicione documentos complementares e menos importantes.
+---
 
-- <b>scripts</b>: Posicione aqui scripts auxiliares para tarefas específicas do seu projeto. Exemplo: deploy, migrações de banco de dados, backups.
+## 🔍 Tecnologias Utilizadas
+- **ESP32** (microcontrolador principal)  
+- **DHT22** – sensor de temperatura e umidade  
+- **Potenciômetro** – simulação de batimentos cardíacos (BPM)  
+- **LED RGB** – indicador visual de estado  
+- **SPIFFS** – sistema de arquivos para armazenamento local  
+- **Arduino IDE / Wokwi** – ambiente de simulação e desenvolvimento
 
-- <b>src</b>: Todo o código fonte criado para o desenvolvimento do projeto ao longo das 7 fases.
+<img src="assets/estrutura_sensores.png" alt="Arquitetura dos sensores" width="500px">
 
-- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
+> *Figura 1 – Arquitetura do projeto* 
 
-## 🔧 Como executar o código
+---
 
-*Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços, bibliotecas etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o seu código e executá-lo a partir de sua máquina ou seu repositório. Considere a explicação organizada em fase.*
-
+## 🔗 Acessos ao Projeto
+- 💻 **Simulação no Wokwi:** [Clique aqui para acessar](https://wokwi.com/projects/https://wokwi.com/projects/444880056645949441)  
+- 📄 **Relatório com explicações:** Acesse o relatório disponibilizado no arquivo `Relatório – Projeto CardioIA Parte 1.pdf`.
+ 
+---
 
 ## 🗃 Histórico de lançamentos
 
-* 0.5.0 - XX/XX/2024
-    * 
-* 0.4.0 - XX/XX/2024
-    * 
-* 0.3.0 - XX/XX/2024
-    * 
-* 0.2.0 - XX/XX/2024
-    * 
-* 0.1.0 - XX/XX/2024
+* 0.1.0 - 16/10/2025
     *
 
 ## 📋 Licença
