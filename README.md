@@ -40,6 +40,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 - **assets/** → imagens utilizadas na documentação do projeto.  
 - **src/** → código-fonte desenvolvido para esta fase.  
 - `Relatório – Projeto CardioIA Parte 1.pdf` → Relatório da Parte 1.
+- `Relatório – Projeto CardioIA Parte 2.pdf` → Relatório da Parte 2 (MQTT + Dashboard).
 - `link_projeto_wokwi` → Link do projeto.  
 - **README.md** → guia geral do projeto (o arquivo que você está lendo).
 
@@ -76,8 +77,29 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 ## 🔗 Acessos ao Projeto
 - 💻 **Simulação no Wokwi:** [Clique aqui para acessar](https://wokwi.com/projects/444880056645949441)  
-- 📄 **Relatório com explicações:** Acesse o relatório disponibilizado no arquivo `Relatório – Projeto CardioIA Parte 1.pdf`.
+- 📄 **Relatórios:**
+  - `Relatório – Projeto CardioIA Parte 1.pdf`
+  - `Relatório – Projeto CardioIA Parte 2.pdf`
  
+---
+
+## 🌐 Parte 2 – MQTT + Dashboard (Fog/Cloud)
+
+### Como executar rapidamente
+1. Execute `start_services.bat` (compila e sobe o Node‑RED).
+2. No VS Code, abra o Wokwi Simulator e clique Play (carrega `build/tmp_sketch.ino.elf`).
+3. No Node‑RED, importe `node-red/cardioia_dashboard.flow.json` e clique Deploy.
+4. Abra `http://127.0.0.1:1880/ui` e gire o potenciômetro para ver o BPM variar.
+
+### Conectividade
+- Broker: `broker.hivemq.com:1883`
+- Tópico: `cardioia/paciente/dados`
+- Payload (JSON): `{ "temp": 36.7, "hum": 55, "bpm": 88 }`
+
+### Evidências
+<img src="assets/fluxo.png" alt="Fluxo Node-RED" width="520">
+<img src="assets/dashboard.png" alt="Dashboard" width="520">
+
 ---
 
 ## 🗃 Histórico de lançamentos
