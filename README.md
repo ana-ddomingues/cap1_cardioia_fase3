@@ -98,7 +98,10 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 ### Evidências
 <img src="assets/fluxo.png" alt="Fluxo Node-RED" width="520">
+> *Figura 2 – Print do Fluxo* 
+
 <img src="assets/dashboard.png" alt="Dashboard" width="520">
+> *Figura 1 – Print dos resultados do dashboard* 
 
 ---
 
