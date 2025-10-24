@@ -1,0 +1,7 @@
+[wokwi]
+version = 1
+# Use the compiled ELF produced by Arduino CLI
+firmware = "build/tmp_sketch.ino.elf"
+elf = "build/tmp_sketch.ino.elf"
+# Show serial over VS Code (optional):
+# rfc2217ServerPort = 4000

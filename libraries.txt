@@ -1,0 +1,8 @@
+# Wokwi Library List
+# See https://docs.wokwi.com/guides/libraries
+
+# Exact versions to avoid resolution delays
+ArduinoJson@6.21.3
+PubSubClient@2.8.0
+DHT sensor library@1.4.4
+Adafruit Unified Sensor@1.1.14

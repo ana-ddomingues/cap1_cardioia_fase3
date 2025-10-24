@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "author": "cap1_cardioia_fase3",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-v1", "id": "esp32", "top": -30, "left": -30, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht22", "top": -180, "left": 140, "attrs": {} },
+  { "type": "wokwi-potentiometer", "id": "pot", "top": -20, "left": 140, "attrs": { "value": "0.5" } },
+    { "type": "wokwi-rgb-led", "id": "rgb", "top": 120, "left": 100, "attrs": { "common": "anode" } }
+  ],
+  "connections": [
+    [ "dht22:VCC", "esp32:3V3", "red" ],
+    [ "dht22:GND", "esp32:GND.1", "black" ],
+    [ "dht22:SDA", "esp32:15", "green" ],
+
+    [ "pot:VCC", "esp32:3V3", "red" ],
+    [ "pot:GND", "esp32:GND.2", "black" ],
+    [ "pot:SIG", "esp32:34", "green" ],
+
+    [ "rgb:COM", "esp32:3V3", "red" ],
+    [ "rgb:R", "esp32:25", "red" ],
+    [ "rgb:G", "esp32:26", "green" ],
+    [ "rgb:B", "esp32:27", "blue" ]
+  ]
+}
