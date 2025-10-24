@@ -103,7 +103,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 <img src="assets/dashboard.png" alt="Dashboard" width="520">
 
-> *Figura 1 – Print dos resultados do dashboard* 
+> *Figura 3 – Print dos resultados do dashboard* 
 
 ---
 
